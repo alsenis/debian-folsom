@@ -19,12 +19,12 @@ echo "include /var/lib/cinder/volumes/*" >> /etc/tgt/targets.conf
 
 # create service for daemon
 
-#cp /etc/init.d/skeleton /etc/init.d/tgtd
-#sed -i "s/^NAME=.*/NAME=tgtd/g" /etc/init.d/tgtd
-#sed -i "s/^DESC=.*/DESC='Linux SCSI target framework'/g" /etc/init.d/tgtd
-#sed -i "s/^DAEMON_ARGS=.*/DAEMON_ARGS=''/g" /etc/init.d/tgtd
-#chmod +x /etc/init.d/tgtd
-#chkconfig --add tgtd
+cp /etc/init.d/skeleton /etc/init.d/tgtd
+sed -i "s/^NAME=.*/NAME=tgtd/g" /etc/init.d/tgtd
+sed -i "s/^DESC=.*/DESC='Linux SCSI target framework'/g" /etc/init.d/tgtd
+sed -i "s/^DAEMON_ARGS=.*/DAEMON_ARGS=''/g" /etc/init.d/tgtd
+chmod +x /etc/init.d/tgtd
+chkconfig --add tgtd
 
 
 #######################
@@ -53,7 +53,7 @@ sed -i "s/^#dhcpbridge/dhcpbridge/g" /etc/nova/nova.conf
 sed -i "s/^libvirt_vif_driver=.*/libvirt_vif_driver=nova.virt.libvirt.vif.LibvirtBridgeDriver/g" /etc/nova/nova-compute.conf
 
 # Create the network
-nova-manage network create private --fixed_range_v4=10.20.0.0/25 --num_networks=1 --bridge=br100 --bridge_interface=eth0 --network_size=128
+nova-manage network create private --fixed_range_v4=10.0.0.0/25 --num_networks=1 --bridge=br100 --bridge_interface=dummy0 --network_size=128
 
 # Restart services
 ./stackswitch.sh restart
