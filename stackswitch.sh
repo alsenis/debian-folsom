@@ -10,7 +10,8 @@ nova-consoleauth
 nova-console
 cinder-volume
 cinder-api
-cinder-scheduler"
+cinder-scheduler
+tgtd"
 #nova-objectstore
 #novnc
 #nova-volume
