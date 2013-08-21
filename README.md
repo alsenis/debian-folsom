@@ -18,7 +18,9 @@ to install:
 others:
 
 ./upload_ubuntu.sh
-
+./convert_raw.sh
+./clear_logs.sh
+./stackswitch.sh
 
 
 
