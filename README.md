@@ -7,22 +7,22 @@ Some scripts and notes to make life easier installing openstack in debian
 to install:
 -----------
 
-./pre_setup.sh
+    ./pre_setup.sh
 
-./install.sh
+    ./install.sh
 
-./post_setup.sh
+    ./post_setup.sh
 
-./upload_cirrOS.sh
+    ./upload_cirrOS.sh
 
 
 others:
 -------
 
-./upload_ubuntu.sh
-./convert_raw.sh
-./clear_logs.sh
-./stackswitch.sh
+    ./upload_ubuntu.sh
+    ./convert_raw.sh
+    ./clear_logs.sh
+    ./stackswitch.sh
 
 
 
