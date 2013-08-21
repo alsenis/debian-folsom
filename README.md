@@ -15,6 +15,14 @@ to install:
 ./upload_cirrOS.sh
 
 
+others:
+
+./upload_ubuntu.sh
+
+
+
+
+
 Thanks to:
 
 Loïc Dachary's guide and code
