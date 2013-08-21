@@ -5,6 +5,7 @@ Some scripts and notes to make life easier installing openstack in debian
 
 
 to install:
+-----------
 
 ./pre_setup.sh
 
@@ -16,6 +17,7 @@ to install:
 
 
 others:
+-------
 
 ./upload_ubuntu.sh
 ./convert_raw.sh
@@ -26,6 +28,7 @@ others:
 
 
 Thanks to:
+----------
 
 Loïc Dachary's guide and code
 http://openstack.dachary.org/2013-01-13/
