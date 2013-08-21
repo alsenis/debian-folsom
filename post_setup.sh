@@ -54,6 +54,11 @@ sed -i "187iauto_assign_floating_ip=True" /etc/nova/nova.conf
 #####################
 sed -i "s/^libvirt_vif_driver=.*/libvirt_vif_driver=nova.virt.libvirt.vif.LibvirtBridgeDriver/g" /etc/nova/nova-compute.conf
 
+
+######################
+# general commands
+######################
+
 # Create the fixed (private) network
 nova-manage network create private --fixed_range_v4=10.0.0.0/25 --num_networks=1 --bridge=br100 --bridge_interface=dummy0 --network_size=128
 
