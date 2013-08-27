@@ -1,6 +1,7 @@
 #!/bin/bash
 
 SERV="libvirt-bin
+keystone
 nova-network
 nova-compute
 nova-cert

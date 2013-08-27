@@ -10,4 +10,7 @@ echo "" > /var/log/cinder/cinder-scheduler.log
 
 echo "" > /var/log/nova/nova-api.log
 echo "" > /var/log/nova/nova-compute.log
-echo "" > /var/log/nova/nova-network.log
+echo "" > /var/log/nova/nova-console.log
+echo "" > /var/log/nova/nova-consoleauth.log
+echo "" > /var/log/nova/nova-cert.log
+
