@@ -71,6 +71,18 @@ nova-manage floating create --ip_range=172.23.12.0/24
 # Show the network
 nova-manage network list
 
+# Add Security Group Rules to default security group
+nova secgroup-add-rule default tcp 22 22 0.0.0.0/0
+nova secgroup-add-rule default tcp 80 80 0.0.0.0/0
+nova secgroup-add-rule default icmp -1 -1 0.0.0.0/0
+
+# Create custom flavor
+#NAME=micro
+#ID=6
+#RAM=128
+#DISK=0
+#VCPU=1
+# nova flavor-create $NAME $ID $RAM $DISK $VCPU
 
 #################
 # CINDER
