@@ -1,0 +1,214 @@
+ceilometer-api	ceilometer/endpoint-ip	string	172.23.3.8 
+ceilometer-api	ceilometer/keystone-ip	string	127.0.0.1
+ceilometer-api	ceilometer/region-name	string	regionOne
+cinder-api	cinder/endpoint-ip	string	172.23.3.8 
+cinder-api	cinder/keystone-ip	string	127.0.0.1
+cinder-api	cinder/region-name	string	regionOne
+cinder-api	cinder/register-endpoint	boolean	true
+cinder-api	cinder/keystone-auth-token	string	ADMIN
+cinder-common	cinder/admin-password	password	ADMIN
+cinder-common	cinder/admin-tenant-name	string	admin
+cinder-common	cinder/admin-user	string	admin
+cinder-common	cinder/auth-host	string	192.168.42.1 
+cinder-common	cinder-common/app-password-confirm	password	
+cinder-common	cinder-common/database-type	select	mysql
+cinder-common	cinder-common/db/app-user	string	cinder-common
+cinder-common	cinder-common/db/basepath	string	/var/lib/cinder
+cinder-common	cinder-common/db/dbname	string	cinderdb
+cinder-common	cinder-common/install-error	select	abort
+cinder-common	cinder-common/missing-db-package-error	select	abort
+cinder-common	cinder-common/mysql/admin-pass	password	
+cinder-common	cinder-common/mysql/admin-user	string	root
+cinder-common	cinder-common/mysql/app-pass	password	
+cinder-common	cinder-common/mysql/method	select	unix socket
+cinder-common	cinder-common/password-confirm	password	
+cinder-common	cinder-common/pgsql/admin-pass	password	
+cinder-common	cinder-common/pgsql/admin-user	string	postgres
+cinder-common	cinder-common/pgsql/app-pass	password	
+cinder-common	cinder-common/pgsql/authmethod-admin	select	password
+cinder-common	cinder-common/pgsql/authmethod-user	select	
+cinder-common	cinder-common/pgsql/changeconf	boolean	false
+cinder-common	cinder-common/pgsql/manualconf	note	
+cinder-common	cinder-common/pgsql/method	select	unix socket
+cinder-common	cinder-common/purge	boolean	false
+cinder-common	cinder-common/remote/host	select	
+cinder-common	cinder-common/remote/newhost	string	
+cinder-common	cinder-common/remote/port	string	
+cinder-common	cinder-common/remove-error	select	abort
+cinder-common	cinder-common/upgrade-backup	boolean	true
+cinder-common	cinder-common/upgrade-error	select	abort
+cinder-common	cinder/configure_db	boolean	true
+cinder-common	cinder/start_services	boolean	true
+cinder-common	cinder/volume_group	string	cinder
+console-setup	console-setup/charmap47	select	UTF-8
+console-setup	console-setup/codesetcode	string	Lat15
+console-setup	console-setup/fontface47	select	Fixed
+console-setup	console-setup/fontsize-fb47	select	8x16
+console-setup	console-setup/fontsize	string	8x16
+console-setup	console-setup/fontsize-text47	select	8x16
+console-setup	console-setup/store_defaults_in_debconf_db	boolean	true
+dbconfig-common	dbconfig-common/app-password-confirm	password	
+dbconfig-common	dbconfig-common/database-type	select	
+dbconfig-common	dbconfig-common/db/app-user	string	
+dbconfig-common	dbconfig-common/db/basepath	string	
+dbconfig-common	dbconfig-common/dbconfig-install	boolean	true
+dbconfig-common	dbconfig-common/dbconfig-reinstall	boolean	false
+dbconfig-common	dbconfig-common/dbconfig-remove	boolean	true
+dbconfig-common	dbconfig-common/dbconfig-upgrade	boolean	true
+dbconfig-common	dbconfig-common/db/dbname	string	
+dbconfig-common	dbconfig-common/install-error	select	abort
+dbconfig-common	dbconfig-common/missing-db-package-error	select	abort
+dbconfig-common	dbconfig-common/mysql/admin-pass	password	
+dbconfig-common	dbconfig-common/mysql/admin-user	string	root
+dbconfig-common	dbconfig-common/mysql/app-pass	password	
+dbconfig-common	dbconfig-common/mysql/method	select	unix socket
+dbconfig-common	dbconfig-common/password-confirm	password	
+dbconfig-common	dbconfig-common/pgsql/admin-pass	password	
+dbconfig-common	dbconfig-common/pgsql/admin-user	string	postgres
+dbconfig-common	dbconfig-common/pgsql/app-pass	password	
+dbconfig-common	dbconfig-common/pgsql/authmethod-admin	select	ident
+dbconfig-common	dbconfig-common/pgsql/authmethod-user	select	
+dbconfig-common	dbconfig-common/pgsql/changeconf	boolean	false
+dbconfig-common	dbconfig-common/pgsql/manualconf	note	
+dbconfig-common	dbconfig-common/pgsql/method	select	unix socket
+dbconfig-common	dbconfig-common/pgsql/no-user-choose-other-method	note	
+dbconfig-common	dbconfig-common/pgsql/revertconf	boolean	false
+dbconfig-common	dbconfig-common/purge	boolean	false
+dbconfig-common	dbconfig-common/remember-admin-pass	boolean	false
+dbconfig-common	dbconfig-common/remote/host	select	
+dbconfig-common	dbconfig-common/remote/newhost	string	
+dbconfig-common	dbconfig-common/remote/port	string	
+dbconfig-common	dbconfig-common/remote-questions-default	boolean	true
+dbconfig-common	dbconfig-common/remove-error	select	abort
+dbconfig-common	dbconfig-common/upgrade-backup	boolean	true
+dbconfig-common	dbconfig-common/upgrade-error	select	abort
+glance-api	glance/endpoint-ip	string	172.23.3.8 
+glance-api	glance/keystone-ip	string	127.0.0.1
+glance-api	glance/region-name	string	regionOne
+glance-api	glance/register-endpoint	boolean	true
+glance-api	glance/keystone-auth-token	string	ADMIN
+glance-common	glance/admin-password	password	ADMIN
+glance-common	glance/admin-tenant-name	string	admin
+glance-common	glance/admin-user	string	admin
+glance-common	glance/auth-host	string	192.168.42.1 
+glance-common	glance-common/app-password-confirm	password	
+glance-common	glance-common/database-type	select	mysql
+glance-common	glance-common/db/app-user	string	glance-common
+glance-common	glance-common/db/basepath	string	/var/lib/glance
+glance-common	glance-common/db/dbname	string	glancedb
+glance-common	glance-common/install-error	select	abort
+glance-common	glance-common/missing-db-package-error	select	abort
+glance-common	glance-common/mysql/admin-pass	password	
+glance-common	glance-common/mysql/admin-user	string	root
+glance-common	glance-common/mysql/app-pass	password	
+glance-common	glance-common/mysql/method	select	unix socket
+glance-common	glance-common/password-confirm	password	
+glance-common	glance-common/purge	boolean	false
+glance-common	glance-common/remote/host	select	
+glance-common	glance-common/remote/newhost	string	
+glance-common	glance-common/remote/port	string	
+glance-common	glance-common/remove-error	select	abort
+glance-common	glance-common/upgrade-backup	boolean	true
+glance-common	glance-common/upgrade-error	select	abort
+glance-common	glance/configure_db	boolean	true
+glance-common	glance/paste-flavor	select	keystone
+keystone	keystone/admin-email	string	root@localhost
+keystone	keystone/admin-password-confirm	password	ADMIN
+keystone	keystone/admin-password	password	ADMIN
+keystone	keystone/admin-role-name	string	admin
+keystone	keystone/admin-tenant-name	string	admin
+keystone	keystone/admin-user	string	admin
+keystone	keystone/app-password-confirm	password	
+keystone	keystone/auth-token	password	ADMIN
+keystone	keystone/configure_db	boolean	true
+keystone	keystone/database-type	select	mysql
+keystone	keystone/db/app-user	string	keystone
+keystone	keystone/db/basepath	string	/var/lib/keystone
+keystone	keystone/dbconfig-install	boolean	true
+keystone	keystone/dbconfig-reinstall	boolean	false
+keystone	keystone/dbconfig-remove	boolean	
+keystone	keystone/dbconfig-upgrade	boolean	true
+keystone	keystone/db/dbname	string	keystonedb
+keystone	keystone/endpoint-ip	string	172.23.3.8 
+keystone	keystone/install-error	select	abort
+keystone	keystone/internal/reconfiguring	boolean	false
+keystone	keystone/internal/skip-preseed	boolean	false
+keystone	keystone/missing-db-package-error	select	abort
+keystone	keystone/mysql/admin-pass	password	
+keystone	keystone/mysql/admin-user	string	root
+keystone	keystone/mysql/app-pass	password	
+keystone	keystone/mysql/method	select	unix socket
+keystone	keystone/password-confirm	password	
+keystone	keystone/pgsql/admin-pass	password	
+keystone	keystone/pgsql/admin-user	string	postgres
+keystone	keystone/pgsql/app-pass	password	
+keystone	keystone/pgsql/authmethod-admin	select	password
+keystone	keystone/pgsql/authmethod-user	select	
+keystone	keystone/pgsql/changeconf	boolean	false
+keystone	keystone/pgsql/manualconf	note	
+keystone	keystone/pgsql/method	select	unix socket
+keystone	keystone/purge	boolean	false
+keystone	keystone/region-name	string	regionOne
+keystone	keystone/register-endpoint	boolean	true
+keystone	keystone/remote/host	select	
+keystone	keystone/remote/newhost	string	
+keystone	keystone/remote/port	string	
+keystone	keystone/remove-error	select	abort
+keystone	keystone/upgrade-backup	boolean	true
+keystone	keystone/upgrade-error	select	abort
+mysql-server-5.5	mysql-server-5.5/nis_warning	note	
+mysql-server-5.5	mysql-server-5.5/postrm_remove_databases	boolean	false
+mysql-server-5.5	mysql-server-5.5/really_downgrade	boolean	false
+mysql-server-5.5	mysql-server-5.5/start_on_boot	boolean	true
+mysql-server-5.5	mysql-server/root_password_again	password	
+mysql-server-5.5	mysql-server/root_password	password	
+nova-api	nova/endpoint-ip	string	172.23.3.8 
+nova-api	nova/keystone-ip	string	127.0.0.1
+nova-api	nova/region-name	string	regionOne
+nova-api	nova/register-endpoint	boolean	true
+nova-api	nova/keystone-auth-token	string	ADMIN
+nova-common	nova/active-api	multiselect	ec2, osapi_compute, metadata, osapi_volume
+nova-common	nova/admin-password	password	ADMIN
+nova-common	nova/admin-tenant-name	string	admin
+nova-common	nova/admin-user	string	admin
+nova-common	nova/auth-host	string	192.168.42.1 
+nova-common	nova-common/app-password-confirm	password	
+nova-common	nova-common/database-type	select	mysql
+nova-common	nova-common/db/app-user	string	nova-common
+nova-common	nova-common/db/basepath	string	/var/lib/nova
+nova-common	nova-common/dbconfig-install	boolean	true
+nova-common	nova-common/dbconfig-reinstall	boolean	false
+nova-common	nova-common/dbconfig-remove	boolean	
+nova-common	nova-common/dbconfig-upgrade	boolean	true
+nova-common	nova-common/db/dbname	string	novadb
+nova-common	nova-common/install-error	select	abort
+nova-common	nova-common/internal/reconfiguring	boolean	false
+nova-common	nova-common/internal/skip-preseed	boolean	false
+nova-common	nova-common/missing-db-package-error	select	abort
+nova-common	nova-common/mysql/admin-pass	password	
+nova-common	nova-common/mysql/admin-user	string	root
+nova-common	nova-common/mysql/app-pass	password	
+nova-common	nova-common/mysql/method	select	unix socket
+nova-common	nova-common/password-confirm	password	
+nova-common	nova-common/pgsql/admin-pass	password	
+nova-common	nova-common/pgsql/admin-user	string	postgres
+nova-common	nova-common/pgsql/app-pass	password	
+nova-common	nova-common/pgsql/authmethod-admin	select	password
+nova-common	nova-common/pgsql/authmethod-user	select	
+nova-common	nova-common/pgsql/changeconf	boolean	false
+nova-common	nova-common/pgsql/manualconf	note	
+nova-common	nova-common/pgsql/method	select	unix socket
+nova-common	nova-common/purge	boolean	false
+nova-common	nova-common/remote/host	select	
+nova-common	nova-common/remote/newhost	string	
+nova-common	nova-common/remote/port	string	
+nova-common	nova-common/remove-error	select	abort
+nova-common	nova-common/upgrade-backup	boolean	true
+nova-common	nova-common/upgrade-error	select	abort
+nova-common	nova/configure_db	boolean	true
+nova-common	nova/my-ip	string	192.168.42.1 
+nova-common	nova/network-manager	select	VlanManager
+nova-common	nova/start_services	boolean	true
+openstack-dashboard-apache	horizon/activate_vhost	boolean	true
+openstack-dashboard-apache	horizon/use_ssl	boolean	true
+libguestfs0     libguestfs/update-appliance     boolean true
